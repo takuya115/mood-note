@@ -116,7 +116,11 @@ export default {
 </script>
 
 <style scoped>
+input[name="mood"] + label * {
+  border: 2px solid rgba(152, 251, 152, 0);
+}
+
 input[name="mood"]:checked + label * {
-  background: orange;
+  border: 2px solid rgb(95, 255, 95);
 }
 </style>
