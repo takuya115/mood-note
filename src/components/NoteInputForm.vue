@@ -41,26 +41,58 @@
               name="input-text"
               label="今日の気分は？"
               no-resize
+              rows="4"
               v-model="inputValue.text"
             ></v-textarea>
           </v-col>
         </v-row>
         <div class="d-flex justify-space-between">
           <div>
-            <input v-model="inputValue.mood" type="radio" value="excited" name="mood" id="excited" style="display:none;" />
+            <input
+              v-model="inputValue.mood"
+              type="radio"
+              value="excited"
+              name="mood"
+              id="excited"
+              style="display: none"
+            />
             <label for="excited"><v-icon>mdi-emoticon-excited</v-icon></label>
           </div>
           <div>
-            <input v-model="inputValue.mood" type="radio" value="happy" name="mood" id="happy" style="display:none;" />
+            <input
+              v-model="inputValue.mood"
+              type="radio"
+              value="happy"
+              name="mood"
+              id="happy"
+              style="display: none"
+            />
             <label for="happy"><v-icon>mdi-emoticon-happy</v-icon></label>
           </div>
           <div>
-            <input v-model="inputValue.mood" type="radio" value="angry" name="mood" id="angry" style="display:none;" />
+            <input
+              v-model="inputValue.mood"
+              type="radio"
+              value="angry"
+              name="mood"
+              id="angry"
+              style="display: none"
+            />
             <label for="angry"><v-icon>mdi-emoticon-angry</v-icon></label>
           </div>
           <div>
-            <input v-model="inputValue.mood" type="radio" value="sad" name="mood" id="sad" style="display:none;" />
+            <input
+              v-model="inputValue.mood"
+              type="radio"
+              value="sad"
+              name="mood"
+              id="sad"
+              style="display: none"
+            />
             <label for="sad"><v-icon>mdi-emoticon-sad</v-icon></label>
+          </div>
+          <div>
+            <v-btn color="primary" small>登録</v-btn>
           </div>
         </div>
       </v-form>
@@ -84,7 +116,7 @@ export default {
 </script>
 
 <style scoped>
-  input[name="mood"]:checked + label * {
-    background: orange;
-  }
+input[name="mood"]:checked + label * {
+  background: orange;
+}
 </style>
