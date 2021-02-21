@@ -34,6 +34,6 @@ export default {
 
 <style>
   #app {
-    background: rgb(216, 255, 216);
+    background: var(--v-primary-lighten5);
   }
 </style>

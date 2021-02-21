@@ -117,10 +117,10 @@ export default {
 
 <style scoped>
 input[name="mood"] + label * {
-  border: 2px solid rgba(152, 251, 152, 0);
+  border: 2px solid rgba(0, 0, 0, 0);
 }
 
 input[name="mood"]:checked + label * {
-  border: 2px solid rgb(95, 255, 95);
+  border: 2px solid var(--v-primary-base);
 }
 </style>

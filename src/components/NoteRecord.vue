@@ -41,7 +41,5 @@ export default {
 </script>
 
 <style scoped>
-  input[name="mood"]:checked + label * {
-    background: orange;
-  }
+
 </style>
