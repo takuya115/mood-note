@@ -4,12 +4,12 @@
       <v-container fluid>
         <v-row justify="center">
           <!-- インプット -->
-          <v-col cols="3">
+          <v-col cols="auto" sm="12" md="6" lg="4">
             <Note/>
           </v-col>
           <!-- グラフ -->
-          <v-col cols="3">
-            <Chart/>
+          <v-col cols="auto" sm="12" md="6" lg="4">
+            <!-- <Chart/> -->
           </v-col>
         </v-row>
       </v-container>
@@ -19,12 +19,12 @@
 
 <script>
 import Note from './components/VNote';
-import Chart from './components/VChart';
+// import Chart from './components/VChart';
 
 export default {
   name: 'App',
 
-  components: { Note, Chart },
+  components: { Note },
 
   data: () => ({
     //
